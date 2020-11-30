@@ -34,4 +34,5 @@ function onSwitchModal(idx) {
   $('.modal-body img').attr('src', `img/portfolio/${project.id}.jpg`);
   $('.modal-body .modal-text').text(project.desc);
   $('.modal-body li:first-child').text(project.publishedAt);
+  // https://adirhagag.github.io/Minesweeper/
 }
