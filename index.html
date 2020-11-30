@@ -33,7 +33,35 @@
 
   <!-- Contact -->
   <section id="contact">
-    <h4>Contact Me</h4>
+    <div class="card">
+      <h5 class="card-header info-color white-text text-center py-4">
+          <strong>Contact us</strong>
+      </h5>
+      <!--Card content-->
+      <div class="card-body px-lg-5 pt-0">
+          <!-- Form -->
+          <form class="text-center" style="color: #757575;" action="#!">
+            <!-- Subject -->
+            <div class="md-form mt-3">
+              <input type="text" id="materialContactFormSubject" class="form-control">
+              <label for="materialContactFormSubject">Subject</label>
+            </div>
+            <!-- E-mail -->
+            <div class="md-form">
+                <input type="email" id="materialContactFormEmail" class="form-control">
+                <label for="materialContactFormEmail">E-mail</label>
+            </div>
+              <!--Message-->
+              <div class="md-form">
+                  <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+                  <label for="materialContactFormMessage">Message</label>
+              </div>
+              <!-- Send button -->
+              <button type="button" class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" onclick="onSendForm();return false">Send</button>
+          </form>
+          <!-- Form -->
+      </div>
+    </div>
   </section>
     
   </aside>
@@ -69,7 +97,7 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome today To my Portfolio</div>
+        <div class="intro-lead-in">Welcome To my Portfolio</div>
         <div class="intro-heading">It's Nice To Meet You</div>
         <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
@@ -323,7 +351,7 @@
                 </ul>
                 <!-- <button class="btn btn-primary" type="button">
                     My Project</button> -->
-                    <a class="nav-link active" href="#">My Project</a>
+                    <a class="nav-link active" href="https://adirhagag.github.io/Minesweeper/" target="_blank">My Project</a>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
                     Close Project</button>

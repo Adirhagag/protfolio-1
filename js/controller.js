@@ -34,5 +34,18 @@ function onSwitchModal(idx) {
   $('.modal-body img').attr('src', `img/portfolio/${project.id}.jpg`);
   $('.modal-body .modal-text').text(project.desc);
   $('.modal-body li:first-child').text(project.publishedAt);
-  // https://adirhagag.github.io/Minesweeper/
+}
+
+function onSendForm() {
+  var $userMail = $('input[type=email]');
+  var $userSubject = $('input[type=text]');
+  var $msgBody = $('textarea');
+  if ($msgBody.val() === '' || $userSubject.val() === '' || $userMail.val() === '') return;
+  var url = `https://mail.google.com/mail/?view=cm&fs=1&to=${$userMail.val()}&su=${$userSubject.val()}&body=${$msgBody.val()}`;
+
+  window.open(url);
+
+  $userSubject.val('')
+  $msgBody.val('');
+  $userMail.val('');
 }

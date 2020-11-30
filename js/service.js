@@ -9,7 +9,7 @@ function createProj() {
     name: 'Minesweeper',
     title: 'The first sprint',
     desc: 'This was the first sprint and it was very strassful',
-    url: 'projs/sokoban',
+    url: 'https://adirhagag.github.io/Minesweeper/',
     publishedAt: 1448693940000,
     labels: ['Matrixes', ' Loops'],
   }
